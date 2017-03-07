@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Recent Earthquakes Animation using D3.js</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- d3.js version 3.5.16, and topojson -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+ 
+</head>
+  
+<body>
+
+  <!-- titles, etc -->
+  <h2>Today's global earthquakes</h2>
+  <h4>Real time data courtesy of the <a href='https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php' target='_blank'>USGS</a></h4>
+  <!-- div for the map -->
+  <div id='chart'></div>
+  
+
+  <!-- main script for this animation -->
+  <script src="js/index.js"></script>
+</body>
+  
+</html>
