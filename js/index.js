@@ -73,6 +73,11 @@ var buildEarthquakeMap = function() {
         }
       );
       
+      // earthquake times in json are descending,
+      // so reverse the array so we're
+      // moving forward in time (faster than sort)
+      earthquakes.reverse();
+      
       // get the circle selection and add the data
       var circles = svg.selectAll("circle")
          .remove() // this clears any existing circles we have, which will need updated x/y data on resize
